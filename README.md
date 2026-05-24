@@ -134,7 +134,7 @@ jupyter notebook task2_customer_churn_ml_pipeline.ipynb
 ##  Exploratory Data Analysis
 
 ### Churn Distribution
-![Churn Distribution](assets/01_churn_distribution.png)
+![Churn Distribution](assets/01_Churn_Distribution.png)
 
 > **Insight:** ~26.5% of customers churn. This class imbalance means accuracy alone is misleading — a naive "predict no churn always" model scores 73.5%. We use **F1-Score** and **ROC-AUC** as primary metrics.
 
