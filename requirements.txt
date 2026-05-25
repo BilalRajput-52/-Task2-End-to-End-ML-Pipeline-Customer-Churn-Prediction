@@ -1,0 +1,20 @@
+# ─────────────────────────────────────────────────────────────
+# Task 2: End-to-End ML Pipeline — Customer Churn Prediction
+# DevelopersHub Corporation — AI/ML Engineering Internship
+# ─────────────────────────────────────────────────────────────
+
+# Core ML
+scikit-learn==1.5.2
+pandas==2.2.3
+numpy==2.0.2
+
+# Visualization
+matplotlib==3.9.4
+seaborn==0.13.2
+
+# Model Export
+joblib==1.4.2
+
+# Notebook
+jupyter==1.1.1
+ipykernel==6.29.5
