@@ -134,14 +134,14 @@ jupyter notebook task2_customer_churn_ml_pipeline.ipynb
 ##  Exploratory Data Analysis
 
 ### Churn Distribution
-![Churn Distribution](assets/01_Churn_Distribution.png)
+![Churn Distribution](images/churn_distribution.png)
 
 > **Insight:** ~26.5% of customers churn. This class imbalance means accuracy alone is misleading — a naive "predict no churn always" model scores 73.5%. We use **F1-Score** and **ROC-AUC** as primary metrics.
 
 ---
 
 ### Numerical Features vs Churn
-![Numerical Features vs Churn](assets/02_numerical_vs_churn.png)
+![Numerical Features vs Churn](images/numerical_features_vs_Churn.png)
 
 > **Key findings:**
 > - **Tenure:** New customers (low tenure) churn far more — long-term customers are loyal
@@ -151,7 +151,7 @@ jupyter notebook task2_customer_churn_ml_pipeline.ipynb
 ---
 
 ### Categorical Features vs Churn Rate
-![Categorical Features vs Churn](assets/03_categorical_vs_churn.png)
+![Categorical Features vs Churn](images/categorical_features_vs_Churn.png)
 
 > **Key findings:**
 > - **Contract type** is the single biggest driver — Month-to-month customers churn at ~42% vs ~11% for 2-year contracts
@@ -162,7 +162,7 @@ jupyter notebook task2_customer_churn_ml_pipeline.ipynb
 ---
 
 ### Correlation Heatmap
-![Correlation Heatmap](assets/04_correlation_heatmap.png)
+![Correlation Heatmap](images/correlation_heatmap.png)
 
 > **Key findings:**
 > - `tenure` has the strongest **negative** correlation with churn (-0.35) — longer customers stay
@@ -215,7 +215,7 @@ pipeline = Pipeline([
 ##  Results & Visualizations
 
 ### Confusion Matrices
-![Confusion Matrices](assets/05_confusion_matrices.png)
+![Confusion Matrices](images/confusion_matrices.png)
 
 > **Reading the matrix:**
 > - **TN (top-left):** Correctly predicted No Churn → these customers are retained
@@ -226,7 +226,7 @@ pipeline = Pipeline([
 ---
 
 ### ROC Curves
-![ROC Curves](assets/06_roc_curves.png)
+![ROC Curves](images/ROC_curves.png)
 
 > **ROC-AUC = 0.84** means the model correctly ranks a random churning customer above a non-churner **84% of the time**.
 >
@@ -235,7 +235,7 @@ pipeline = Pipeline([
 ---
 
 ### Feature Importance — Random Forest
-![Feature Importance](assets/07_feature_importance.png)
+![Feature Importance](images/feature_importance.png)
 
 > **Top 5 churn predictors identified by Random Forest:**
 >
@@ -250,7 +250,7 @@ pipeline = Pipeline([
 ---
 
 ### Model Performance Comparison
-![Metrics Comparison](assets/08_metrics_comparison.png)
+![Metrics Comparison](/metrics_comparison.png)
 
 > Both models achieve comparable performance. **Logistic Regression is preferred for production** due to:
 > - Faster inference (~10ms vs ~200ms per batch)
@@ -356,7 +356,7 @@ print(f'Churn Prob : {prob:.1%}')
 
 ## 👤 Author
 
-**[Bilal Ahmed]**  
+**Bilal Ahmed**  
 AI/ML Engineering Intern — DevelopersHub Corporation  
  May 2026
 
