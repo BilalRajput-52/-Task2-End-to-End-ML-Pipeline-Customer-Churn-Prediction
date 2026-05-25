@@ -41,7 +41,7 @@ A reliable churn prediction model allows the business to:
 
 ##  Pipeline Architecture
 
-![Pipeline Architecture](assets/09_pipeline_architecture.png)
+![Pipeline Architecture](images/preview_pipeline.png)
 
 > **Key principle:** The `Pipeline` object guarantees that all preprocessing steps are fit only on training data — preventing **data leakage**.
 
